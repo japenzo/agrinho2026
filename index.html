@@ -1,65 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Agronegócio Sustentável</title>
+    <title>Agro Sustentável</title>
 
     <style>
 
-        body{
-            font-family: "Comic Sans MS", cursive;
-            background:#dff0d8;
-            text-align:center;
+        *{
             margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
+        body{
+            font-family:"Comic Sans MS", cursive;
+            text-align:center;
+            background:#f5f5f5;
+        }
+
+        /* MENU */
+
         header{
-            background:green;
-            color:white;
+            background:#2e7d32;
             padding:20px;
+        }
+
+        nav{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:15px;
+        }
+
+        nav h1{
+            color:white;
+            font-size:40px;
+        }
+
+        nav ul{
+            display:flex;
+            gap:20px;
+            list-style:none;
+            flex-wrap:wrap;
+            justify-content:center;
         }
 
         nav a{
             color:white;
-            margin:10px;
             text-decoration:none;
             font-size:20px;
         }
 
-        section{
-            background:white;
-            margin:20px;
-            padding:20px;
-            border-radius:10px;
+        /* BANNER */
+
+        .banner{
+            padding:40px 20px;
+            background:#c8e6c9;
         }
 
-        img{
-            width:250px;
-            border-radius:10px;
+        .banner img{
+            width:300px;
+            border-radius:20px;
+            margin-bottom:20px;
+        }
+
+        .banner h2{
+            font-size:40px;
+            color:#1b5e20;
+        }
+
+        .banner p{
+            font-size:22px;
+            margin-top:10px;
+        }
+
+        /* SEÇÕES */
+
+        section{
+            padding:50px 20px;
         }
 
         h2{
-            color:green;
+            font-size:35px;
+            color:#2e7d32;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:20px;
+            max-width:800px;
+            margin:auto;
+        }
+
+        /* CARDS */
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            margin-top:30px;
+        }
+
+        .card{
+            width:300px;
+            background:white;
+            border-radius:15px;
+            padding-bottom:20px;
+            box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+            border-radius:15px 15px 0 0;
+        }
+
+        .card h3{
+            margin:15px 0;
+            color:#1b5e20;
+        }
+
+        .card p{
+            padding:0 15px;
+            font-size:18px;
+        }
+
+        /* FORMULÁRIO */
+
+        form{
+            max-width:500px;
+            margin:auto;
+
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+            margin-top:30px;
+        }
+
+        input,
+        textarea,
+        button{
+            padding:15px;
+            border-radius:10px;
+            border:1px solid #ccc;
+            font-family:"Comic Sans MS", cursive;
+            font-size:18px;
+        }
+
+        textarea{
+            height:150px;
         }
 
         button{
-            background:green;
+            background:#2e7d32;
             color:white;
             border:none;
-            padding:10px 20px;
-            border-radius:10px;
-            font-family:"Comic Sans MS", cursive;
             cursor:pointer;
         }
 
+        /* RODAPÉ */
+
         footer{
-            background:green;
+            background:#2e7d32;
             color:white;
-            padding:15px;
-            margin-top:20px;
+            padding:20px;
+            margin-top:30px;
         }
 
     </style>
@@ -67,97 +175,215 @@
 
 <body>
 
+    <!-- MENU -->
+
     <header>
 
-        <h1>🌱 Agronegócio Sustentável</h1>
-
         <nav>
-            <a href="#inicio">Início</a>
-            <a href="#sustentabilidade">Sustentabilidade</a>
-            <a href="#desafios">Desafios</a>
-            <a href="#contato">Contato</a>
+
+            <h1>🌱 Agro Sustentável</h1>
+
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produção</a></li>
+                <li><a href="#">Sustentabilidade</a></li>
+                <li><a href="#">Desafios</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
         </nav>
 
     </header>
 
-    <section id="inicio">
+    <!-- BANNER -->
 
-        <h2>Bem-vindo</h2>
+    <section class="banner">
 
-        <img src="cachorro.jpg">
+        <img src="cachorro.jpg" alt="Cachorro">
+
+        <h2>Produzir hoje sem destruir o amanhã 🌎</h2>
 
         <p>
-            Este site fala sobre sustentabilidade no agronegócio
-            e como a tecnologia pode ajudar o meio ambiente.
+            Tecnologia, sustentabilidade e inovação no agronegócio.
         </p>
 
     </section>
 
-    <section id="sustentabilidade">
-
-        <h2>🌱 Sustentabilidade</h2>
-
-        <img src="cachorro.jpg">
-
-        <p>
-            A sustentabilidade ajuda a preservar água, solo e florestas.
-        </p>
-
-    </section>
-
-    <section id="desafios">
-
-        <h2>🌎 Desafios Ambientais</h2>
-
-        <img src="cachorro.jpg">
-
-        <p>
-            O desmatamento e a poluição são alguns dos problemas atuais.
-        </p>
-
-    </section>
+    <!-- PRODUÇÃO -->
 
     <section>
 
-        <h2>💡 Soluções</h2>
-
-        <img src="cachorro.jpg">
+        <h2>🚜 Produção Agrícola</h2>
 
         <p>
-            Energia solar, drones e irrigação inteligente ajudam
-            a reduzir impactos ambientais.
+            O agronegócio é importante para a economia e utiliza
+            tecnologias modernas para aumentar a produção.
         </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Drones</h3>
+                <p>
+                    Monitoramento das plantações com tecnologia.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Irrigação</h3>
+                <p>
+                    Uso inteligente da água para evitar desperdícios.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Energia Solar</h3>
+                <p>
+                    Energia limpa para ajudar o meio ambiente.
+                </p>
+            </div>
+
+        </div>
 
     </section>
 
-    <section id="contato">
+    <!-- SUSTENTABILIDADE -->
+
+    <section>
+
+        <h2>🌱 Sustentabilidade</h2>
+
+        <p>
+            A sustentabilidade busca preservar água, solo e florestas
+            para garantir o futuro das próximas gerações.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Solo</h3>
+                <p>
+                    Conservação do solo evita erosão e perda de nutrientes.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Água</h3>
+                <p>
+                    Uso consciente da água na agricultura.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DESAFIOS -->
+
+    <section>
+
+        <h2>🌍 Desafios Ambientais</h2>
+
+        <p>
+            O desmatamento e a emissão de carbono são alguns
+            dos desafios ambientais atuais.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Desmatamento</h3>
+                <p>
+                    A expansão agrícola pode causar impactos ambientais.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Poluição</h3>
+                <p>
+                    Máquinas e queimadas aumentam a emissão de gases.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FUTURO -->
+
+    <section>
+
+        <h2>💡 Soluções e Futuro</h2>
+
+        <p>
+            Tecnologias sustentáveis ajudam a equilibrar
+            produção agrícola e preservação ambiental.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Tecnologia</h3>
+                <p>
+                    Sensores e inteligência artificial no campo.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="cachorro.jpg" alt="">
+                <h3>Futuro Verde</h3>
+                <p>
+                    Produção sustentável para proteger o planeta.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <section>
 
         <h2>📩 Contato</h2>
 
         <p>
-            “Produzir hoje sem destruir o amanhã.”
+            “O futuro da agricultura depende das escolhas feitas hoje.”
         </p>
 
-        <input type="text" placeholder="Seu nome">
-        <br><br>
+        <form>
 
-        <input type="email" placeholder="Seu email">
-        <br><br>
+            <input type="text" placeholder="Seu nome">
 
-        <button>
-            Enviar
-        </button>
+            <input type="email" placeholder="Seu email">
+
+            <textarea placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
 
     </section>
+
+    <!-- RODAPÉ -->
 
     <footer>
 
         <p>
-            Site educativo sobre sustentabilidade 🌱
+            © 2026 Agro Sustentável 🌱
         </p>
 
     </footer>
 
 </body>
-
 </html>
