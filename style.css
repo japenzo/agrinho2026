@@ -1,90 +1,39 @@
-* {
-    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive, sans-serif !important;
-}
+/* Importa a fonte Comic Neue do Google Fonts */
+@import url('https://googleapis.com');
 
+/* Aplica a fonte e um layout básico para o site */
 body {
+    font-family: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive;
+    background-color: #fcf8f2; /* Tom pastel suave */
+    color: #333333;
+    line-height: 1.6;
     margin: 0;
-    text-align: center;
-    background-color: #f9f9f9;
-    color: #333;
+    padding: 0;
 }
 
-header {
+/* Centraliza e limita a largura do conteúdo principal */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
     padding: 20px;
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-nav a {
-    margin: 10px;
+/* Estilização de títulos */
+h1, h2, h3 {
+    color: #ff5e62;
+    font-weight: 700;
+}
+
+/* Estilização de links */
+a {
+    color: #ff9966;
     text-decoration: none;
-    color: black;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #2e7d32; /* Cor verde ao passar o mouse */
-}
-
-section {
-    padding: 40px 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-img {
-    width: 250px;
-    border-radius: 8px; /* Deixa as bordas das fotos arredondadas */
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #2e7d32; /* Títulos em verde para combinar com Agro */
-}
-
-p {
-    max-width: 700px;
-    margin: auto;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card {
-    width: 250px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 300px;
-    margin: auto;
-}
-
-input, textarea, button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #1b5e20;
+a:hover {
+    text-decoration: underline;
 }
